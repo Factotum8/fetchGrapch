@@ -1,6 +1,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
+
 G=nx.read_adjlist("graphFriends")
 
 print ("Количество узлов",len (G))
@@ -16,3 +17,6 @@ print ("Кластерный коэффициент ",nx.average_clustering (G) 
 nx.draw(G)
 plt.draw()
 plt.show()
+
+#print (raspr.keys() )
+

@@ -29,7 +29,7 @@ while  len(toCheck):
 	for node in toCheck :
 		neighbours = getFriends(node)
 
-		if len (G)<100000:
+		if len (G)<100:
 			tempHeap.update( neighbours )
 			setAdded.update( neighbours )
 			G.add_nodes_from( neighbours )
