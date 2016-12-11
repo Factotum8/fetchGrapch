@@ -14,9 +14,13 @@ print ("Средняя минимальная длина пути",nx.average_sh
 
 print ("Кластерный коэффициент ",nx.average_clustering (G) )
 
-nx.draw(G)
-plt.draw()
+plt.bar(range(len(raspr)), raspr.values())
+plt.xticks(range(len(raspr)), list(raspr.keys()) )
 plt.show()
+
+#nx.draw(G)
+#plt.draw()
+#plt.show()
 
 #print (raspr.keys() )
 
